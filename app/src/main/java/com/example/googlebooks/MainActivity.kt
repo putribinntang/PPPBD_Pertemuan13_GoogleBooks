@@ -138,7 +138,8 @@ fun BooksScreen(
                 BookRow(
                     item = item,
                     onClick = {
-                        // Diisi pada Codelab 5
+                        // Buka halaman detail dan kirim data buku via Intent
+                        context.startActivity(DetailActivity.newIntent(context, item))
                     }
                 )
             }
